@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "name": "calculadora-edades",
+  "description": "Simple calculadora de edades",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nullim/calculadora-edades.git"
+  },
+  "author": "Nullim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nullim/calculadora-edades/issues"
+  },
+  "homepage": "https://github.com/Nullim/calculadora-edades#readme"
+}
