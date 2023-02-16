@@ -213,7 +213,7 @@ function troubleshooting(errores){
 
             $errores.appendChild($error);
         } else{
-            $formFamilia[key].className = ""
+            $formFamilia[key].classList.remove = 'oculto'
         }
     });
     return cantidadErrores;

@@ -1,7 +1,7 @@
 function obtenerMayorNumero(numeros){
     let mayorNumero = numeros[0];
     for (let i = 1; i < numeros.length; i++){
-        if (numeros[i] > mayorNumero){
+        if (numeros[i] < mayorNumero){
             mayorNumero = numeros[i];
         }
     }
@@ -12,7 +12,7 @@ function obtenerMayorNumero(numeros){
 function obtenerMenorNumero(numeros){
     let menorNumero = numeros[0];
     for (let i = 1; i < numeros.length; i++){
-        if (numeros[i] < menorNumero){
+        if (numeros[i] > menorNumero){
             menorNumero = numeros[i];
         }
     }
