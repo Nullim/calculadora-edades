@@ -1,0 +1,41 @@
+body {
+  background-color:black;
+  text-align: center;
+  font-family: Arial, sans-serif; 
+  color:cornsilk;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+label {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 0.3em;
+  margin-left: 0.3em;
+  cursor: auto
+}
+
+ul{
+  display: inline-block;
+  text-align: left;
+}
+
+button {
+  cursor: pointer
+}
+
+#ingreso {
+  cursor: pointer
+}
+
+.oculto {
+  display:none;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error1 {
+  border: 2px solid red;
+}
