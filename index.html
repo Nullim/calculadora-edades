@@ -5,16 +5,20 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Grupo Familiar</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel='stylesheet' href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
 
 <form class="cantidad-familia">
-    <label for="cantidad">¿Cuánta gente vive en tu grupo familiar?</label>
-    <input type="input" name="cantidad" placeholder="Ej: 5" id="cantidad-integrantes-familia">
-    <div>
-        <input type="submit" value="Siguiente" id="ingreso">
+    <div class="mb-3">
+        <label for="cantidad" class="form-label">¿Cuánta gente vive en tu grupo familiar?</label>
+        <input type="input" class="form-control" name="cantidad" placeholder="Ej: 5" id="cantidad-integrantes-familia">
+        <div id="integrantes-ayuda" class="form-text">Por favor, solo ingrese números.</div>
+        <div>
+            <br>
+            <input type="submit" value="Siguiente" id="ingreso">
+        </div>
     </div>
 
     <ul id="errores" class="oculto">

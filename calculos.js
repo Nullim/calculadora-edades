@@ -1,8 +1,8 @@
 function obtenerMayorNumero(numeros){
-    let mayorNumero = numeros[0];
+    let mayorNumero = parseInt(numeros[0]);
     for (let i = 1; i < numeros.length; i++){
-        if (numeros[i] < mayorNumero){
-            mayorNumero = numeros[i];
+        if (parseInt(numeros[i]) > mayorNumero){
+            mayorNumero = parseInt(numeros[i]);
         }
     }
 
@@ -10,10 +10,10 @@ function obtenerMayorNumero(numeros){
 }
 
 function obtenerMenorNumero(numeros){
-    let menorNumero = numeros[0];
+    let menorNumero = parseInt(numeros[0]);
     for (let i = 1; i < numeros.length; i++){
-        if (numeros[i] > menorNumero){
-            menorNumero = numeros[i];
+        if (parseInt(numeros[i]) < menorNumero){
+            menorNumero = parseInt(numeros[i]);
         }
     }
     

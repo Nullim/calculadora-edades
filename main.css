@@ -5,15 +5,14 @@ body {
   color:cornsilk;
   font-size: 18px;
   line-height: 20px;
+  border-color:blue;
 }
 
-label {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 0.3em;
-  margin-left: 0.3em;
-  cursor: auto
+.form-control{
+  width: 100px;
+  margin: auto;
 }
+
 
 ul{
   display: inline-block;

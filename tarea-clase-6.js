@@ -82,10 +82,10 @@ function crearIntegrantes(cantidadFamilia){
 function crearIntegrante(indice){
     const $div = document.createElement('div');
     $div.className = 'integrante';
-    $div.id = `integrante-${indice+1}`
+    $div.id = `integrante-${indice+1}`;
 
     const $label = document.createElement('label');
-    $label.textContent = 'Edad del integrante #: ' + (indice + 1);
+    $label.textContent = 'Edad del integrante #' + (indice + 1)+ ': ';
     const $input = document.createElement('input');
     $input.type = 'input';
     $input.id = `edad-${indice + 1}`
@@ -93,7 +93,7 @@ function crearIntegrante(indice){
     $div.appendChild($label);
     $div.appendChild($input);
 
-    const $integrantes = document.querySelector('#integrantes')
+    const $integrantes = document.querySelector('#integrantes');
     $integrantes.appendChild($div);
 }
 
@@ -153,22 +153,22 @@ function validarEdades (edades){
           let edad = edades[i];
           if (edad.length >= 10){
             errores.push(`El campo de edad #${i+1} debe tener menos de 10 caracteres`);
-            document.querySelector(`#edad-${i+1}`).className = 'error1'
+            document.querySelector(`#edad-${i+1}`).classList.add('error1')
             continue;
           }
           if (edad === ""){
             errores.push(`El campo de edad #${i+1} debe tener al menos 1 caracter`);
-            document.querySelector(`#edad-${i+1}`).className = 'error1'
+            document.querySelector(`#edad-${i+1}`).classList.add('error1')
             continue;
           }
           if (edad <= 0){
             errores.push(`El campo de edad #${i+1} debe tener una edad valida`);
-            document.querySelector(`#edad-${i+1}`).className = 'error1'
+            document.querySelector(`#edad-${i+1}`).classList.add('error1')
             continue;
           }
           if (!/^\d+$/.test(edad)){
             errores.push(`El campo de edad #${i+1} solo acepta numeros`);
-            document.querySelector(`#edad-${i+1}`).className = 'error1'
+            document.querySelector(`#edad-${i+1}`).classList.add('error1')
             continue;
           }
         }
@@ -206,14 +206,14 @@ function troubleshooting(errores){
         const error = (errores[key]);
         if (error){
             cantidadErrores++;
-            $formFamilia[key].className = "error"
+            $formFamilia[key].classList.add("error");
             const $error = document.createElement('li');           
             $error.innerText = error;
             $error.className = "lista-errores";
 
             $errores.appendChild($error);
         } else{
-            $formFamilia[key].classList.remove = 'oculto'
+            $formFamilia[key].className = ""
         }
     });
     return cantidadErrores;
@@ -240,10 +240,10 @@ function borrarErrores(){
     while ($errores.firstChild) {
         $errores.removeChild($errores.firstChild);
     }
-    document.querySelector('#cantidad-integrantes-familia').className = "";
+    document.querySelector('#cantidad-integrantes-familia').className = "form-control";
     if (document.querySelector('.error1')){
         while (document.querySelector('.error1')){
-            document.querySelector('.error1').className = "integrante"
+            document.querySelector('.error1').classList.remove("error1")
         }
     }
 }
