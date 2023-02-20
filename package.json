@@ -6,7 +6,9 @@
   "description": "Simple calculadora de edades",
   "version": "1.0.0",
   "main": "index.html",
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
