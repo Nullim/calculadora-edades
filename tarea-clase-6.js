@@ -151,8 +151,8 @@ function validarEdades (edades){
     if (Array.isArray(edades)){
         for (let i = 0; i < edades.length; i++) {
           let edad = edades[i];
-          if (edad.length >= 10){
-            errores.push(`El campo de edad #${i+1} debe tener menos de 10 caracteres`);
+          if (edad.length >= 5){
+            errores.push(`El campo de edad #${i+1} debe tener menos de 5 caracteres`);
             document.querySelector(`#edad-${i+1}`).classList.add('error1')
             continue;
           }
@@ -174,8 +174,8 @@ function validarEdades (edades){
         }
         return errores;
       } else{
-        if (edades.length >= 10){
-            return 'El campo edad debe tener menos de 10 caracteres';
+        if (edades.length >= 5){
+            return 'El campo edad debe tener menos de 5 caracteres';
         }
         if (edades === ""){
             return 'El campo edad debe tener al menos 1 caracter';

@@ -31,8 +31,8 @@ function probarValidarEdades(){
         "Validar edades no validó que el campo solo tenga números"
     );
     console.assert(
-        validarEdades("49059493459345") === "El campo edad debe tener menos de 10 caracteres",
-        "Validar edades no validó que el campo tenga menos de 10 caracteres"
+        validarEdades("49059493459345") === "El campo edad debe tener menos de 5 caracteres",
+        "Validar edades no validó que el campo tenga menos de 5 caracteres"
     );
     console.assert(
         validarEdades("-5") === "El campo edad debe tener una edad valida",
